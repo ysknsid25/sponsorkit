@@ -18,10 +18,16 @@ export default defineConfig({
   },
   renders: [
     {
-      // ブログ記事末尾に埋め込む用。はてなブログの本文カラム幅に合わせた横長版
+      // ブログ記事末尾に埋め込む用。はてなブログの本文カラム幅に合わせた横長版。
+      // medium の maxLength は 10 で名前が途中で切れるため 16 に広げ、
+      // それが収まるよう boxWidth も少し広げている
       name: 'sponsors',
       width: 800,
-      tiers: mergedTier(tierPresets.base),
+      tiers: mergedTier({
+        ...tierPresets.medium,
+        boxWidth: 92,
+        name: { maxLength: 16 },
+      }),
     },
     {
       // サイドバー等の狭い領域向け。アバターを大きめにして潰れを防ぐ

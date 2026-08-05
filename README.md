@@ -10,10 +10,10 @@ GitHub Actions が毎日 03:00 JST に再生成し、差分があれば `public/
 
 | ファイル | サイズ | 用途 |
 | --- | --- | --- |
-| `sponsors.svg` / `.png` | 800 × 118 | ブログ本文カラム向けの横長版 |
+| `sponsors.svg` / `.png` | 800 × 160 | ブログ本文カラム向けの横長版 |
 | `sponsors-narrow.svg` / `.png` | 400 × 185 | サイドバー等の狭い領域向け |
 
-※ 高さはスポンサー数に応じて変わる。
+どちらもアバターの下にスポンサー名が入る。※ 高さはスポンサー数に応じて変わる。
 
 ## 配信URL
 
@@ -36,7 +36,7 @@ SVG を推奨。`raw.githubusercontent.com` は SVG を `Content-Type: text/plai
         src="https://ysknsid25.github.io/sponsorkit/sponsors.svg"
         alt="Sponsors"
         width="800"
-        height="118"
+        height="160"
         loading="lazy"
         style="max-width: 100%; height: auto"
     />
