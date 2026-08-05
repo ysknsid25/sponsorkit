@@ -1,0 +1,6 @@
+node_modules/
+.env.local
+.DS_Store
+
+# sponsorkit が API レスポンスをキャッシュするファイル。生成物ではないので追跡しない
+public/.cache.json

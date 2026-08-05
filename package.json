@@ -1,0 +1,13 @@
+{
+  "name": "sponsorkit-images",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.3.0",
+  "scripts": {
+    "sponsors": "sponsorkit",
+    "sponsors:local": "node --env-file=.env.local node_modules/sponsorkit/dist/cli.mjs"
+  },
+  "devDependencies": {
+    "sponsorkit": "^18.0.0"
+  }
+}
